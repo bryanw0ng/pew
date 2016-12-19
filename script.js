@@ -53,14 +53,16 @@ function moveDown(ball, top, bottom, interval){ //pass in a ball object
 }
 
 function moveAll(){
-	var move1 = setInterval(moveDown, 25, balls[0], -29, 132, .25);
-	var move2 = setInterval(moveDown, 25, balls[1], -281, 489, .2);
-	var move3 = setInterval(moveDown, 25, balls[2], -74, 107, .21);
-	var move4 = setInterval(moveDown, 25, balls[3], -95, 74, .3);
-	var move5 = setInterval(moveDown, 25, balls[4], -92, 64, .35);
-	var move6 = setInterval(moveDown, 25, balls[5], -115, 47, .2);
-	var move7 = setInterval(moveDown, 25, balls[6], -154, 28, .35);
+	var move1 = setInterval(moveDown, 25, balls[0], -29, 132, .35);
+	var move2 = setInterval(moveDown, 25, balls[1], -60, 100, .20);
+	var move3 = setInterval(moveDown, 25, balls[2], -74, 107, .32);
+	var move4 = setInterval(moveDown, 25, balls[3], -95, 74, .35);
+	var move5 = setInterval(moveDown, 25, balls[4], -92, 64, .37);
+	var move6 = setInterval(moveDown, 25, balls[5], -115, 47, .3);
+	var move7 = setInterval(moveDown, 25, balls[6], -154, 28, .20);
 }
+
+moveAll();
 
 var i={
 	value: 0
@@ -83,19 +85,6 @@ function setSway(i){
 }
 
 var myVar2 = setInterval(setSway, 500, i);
-
-var chungking = document.getElementById("chungking");
-function flash(wong){
-	if (wong.classList.contains("flash")){
-		wong.classList.remove("flash");
-	}
-
-	else{
-		wong.classList.add("flash");
-	}
-}
-
-setInterval(flash, 2000, chungking);
 
 
 

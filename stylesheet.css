@@ -14,8 +14,7 @@
 	top: 40%;
 }
 .text {
-	font-family: Helvetica;
-	font-weight: bold;
+	font-family: Ethos;
 	color: white;
 	margin: 0;
 }
@@ -26,11 +25,16 @@
 }
 
 .medium{
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .tiny{
-	font-size: .4em;
+	font-size: .75em;
+}
+
+.hYellow:hover{
+    cursor: pointer;
+    color: yellow;
 }
 
 #pineapple{
@@ -193,4 +197,10 @@ section {
 @keyframes flash{
 	0%{color: white;}
 	100%{color: yellow;}
+}
+
+.vContainer{
+	height: inherit;
+	width: inherit;
+	overflow: hidden;
 }
