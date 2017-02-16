@@ -1,0 +1,145 @@
+/* global variables */
+body {
+  margin: 0;
+  overflow: hidden; }
+
+/*type*/
+.HelvExt, .month .redMonth, .month .monthTitle, .month h1 {
+  font-family: "Helvetica Extended";
+  color: black; }
+
+.Courier, .month p {
+  font-family: courier;
+  font-weight: 100; }
+
+.paragraph, .month p {
+  font-size: .7em;
+  margin: 0;
+  line-height: 1.5; }
+
+.headline {
+  font-family: "Helvetica Extended";
+  font-weight: normal;
+  font-size: 3em;
+  transform: translate(19.5%, 133%); }
+
+.tags {
+  font-family: "Helvetica Extended";
+  font-weight: 900;
+  font-size: .65em;
+  position: fixed; }
+
+.subHead {
+  font-family: "Helvetica Regular";
+  font-weight: 900;
+  font-size: 1em;
+  margin-bottom: 5px; }
+
+/*objects*/
+.line {
+  border-top: #ff0000 solid 2px;
+  margin-bottom: 1px; }
+
+.month .redMonth {
+  font-weight: 900;
+  font-size: 2em;
+  position: absolute;
+  z-index: -1;
+  color: red;
+  transform: translate(3.5%, 3.5%); }
+.month .monthTitle {
+  position: relative;
+  font-weight: 900;
+  font-size: 2em;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: -3px; }
+.month h1 {
+  font-weight: bold;
+  font-size: 1em;
+  color: darkgray;
+  margin: 0;
+  margin-bottom: 5px; }
+.month p {
+  color: black;
+  line-height: 1.2; }
+
+.bioBox {
+  width: 200px;
+  position: absolute;
+  transform: translate(50px, 90px); }
+
+.bioBox .line {
+  margin-bottom: 10px;
+  width: 80px; }
+.bioBox .title {
+  font-family: 'Helvetica Regular';
+  font-weight: bold;
+  font-size: 1em;
+  white-space: nowrap;
+  margin-left: 10px; }
+.bioBox .option {
+  font-family: 'Helvetica Regular';
+  font-weight: normal;
+  font-size: .7em;
+  margin-left: 50px;
+  white-space: nowrap; }
+.bioBox .preview {
+  margin-bottom: 30px; }
+
+/*photo packaging*/
+/*dominant*/
+.dSquare {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -49%); }
+
+.preview {
+  height: 150px;
+  width: 150px;
+  overflow: hidden; }
+
+/*main divs*/
+#main {
+  position: absolute;
+  right: 2%; }
+
+#mainContainer {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 59vw; }
+
+#TLContainer {
+  width: 10vw;
+  right: 57.5vw;
+  height: 100vh;
+  position: absolute; }
+
+.month {
+  width: inherit;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.monthContent {
+  width: inherit;
+  height: inherit;
+  position: absolute; }
+
+.descriptionBox {
+  width: 200px;
+  /*auto width 200px unless specified*/
+  position: absolute;
+  right: 22%;
+  /*auto on the right side unless specified*/
+  transform: translate(0%, 120%); }
+
+#bioContainer {
+  left: 0;
+  height: 100vh;
+  width: 30vw; }
+
+/*# sourceMappingURL=stylesheet.css.map */

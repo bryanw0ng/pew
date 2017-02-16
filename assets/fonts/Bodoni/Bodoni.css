@@ -1,0 +1,19 @@
+/*bold == bold, normal == regular, 100 == light*/
+
+@font-face{
+	font-family: 'Bodoni';
+	font-weight: bold;
+	src: url('Bodoni-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'Bodoni';
+	font-weight: normal;
+	src: url('Bodoni Old Face BE Regular.ttf');
+}
+
+@font-face{
+	font-family: 'Bodoni';
+	font-weight: 100;
+	src: url('Bodoni BE Light Small Caps & Oldstyle Figures.ttf');
+}
