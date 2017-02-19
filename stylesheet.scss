@@ -22,7 +22,7 @@ body{
 }
 
 .paragraph{
-	font-size: .7em;
+	font-size: .6em;
 	margin: 0;
 	line-height: 1.5;
 }
@@ -64,7 +64,9 @@ body{
 		position: absolute;
 		z-index: -1;
 		color: red;
-		transform: translate(3.5%, 3.5%);
+		left: 0;
+		transform: translate(-3px, 4px);
+		transition: opacity .5s;
 	}
 
 	.monthTitle{
@@ -78,9 +80,9 @@ body{
 	}
 
 	h1{
-		@extend .HelvExt;
-		font-weight: bold;
-		font-size: 1em;
+		font-family: $Helvetica;
+		font-weight: 900;
+		font-size: 1.35em;
 		color: darkgray;
 		margin: 0;
 		margin-bottom: 5px;
@@ -97,7 +99,7 @@ body{
 .bioBox{
 	width: 200px;
 	position: absolute;
-	transform: translate(50px, 90px);
+	transform: translate(50px, 250px);
 }
 
 .bioBox{
@@ -108,14 +110,14 @@ body{
 	.title{
 		font-family: 'Helvetica Regular';
 		font-weight: bold;
-		font-size: 1em;
+		font-size: .8em;
 		white-space: nowrap;
 		margin-left: 10px;
 	}
 	.option{
 		font-family: 'Helvetica Regular';
 		font-weight: normal;
-		font-size: .7em;
+		font-size: .6em;
 		margin-left: 50px;
 		white-space: nowrap;
 	}
@@ -123,6 +125,45 @@ body{
 		margin-bottom: 30px;
 	}
 }
+
+#optionsContainer{
+	.line{
+		position: relative;
+		width: 70px;
+	}
+	.title{
+		font-size: .8em;
+		margin-left: 25px;
+		white-space: nowrap;
+	}
+	ul{
+		padding: 0;
+	}
+	a{
+		position: absolute;
+		font-family: $Helvetica;
+		font-size: .6em;
+		font-weight: normal;
+		margin-left: 40px;
+		white-space: nowrap;
+	}
+	li{
+		margin-bottom: 20px;
+	}
+}
+
+.descriptionBox{
+	p{
+		margin-bottom: 50px;
+	}
+
+	a{
+		@extend .subHead;
+		font-size: .75em;
+		color: darkgray;
+	}
+}
+
 /*photo packaging*/
 
 /*dominant*/
@@ -133,32 +174,41 @@ body{
 	overflow: hidden;
 	position: absolute;
 	top: 50%;
-	transform: translate(25%, -49%);
+	transform: translate(15%, -50%);
 }
 
 .preview{
-	height: 150px;
-	width: 150px;
+	height: 125px;
+	width: 125px;
 	overflow: hidden;
+}
+
+li{
+	list-style-type: none;
 }
 
 /*main divs*/
 
 #main{
 	position: absolute;
-	right: 2%;
+	right: 8%;
+	height: 100vh;
+	width: 77.5vw;
+	overflow: hidden;
+	right: 0;
 }
 
 #mainContainer{
 	position: absolute;
-	right: 0;
-	height: 100vh;
-	width: 59vw;
+	right: 1.5vw;
+	height: 1200vh;
+	width: 67.5vw;
+	overflow: hidden;
 }
 
 #TLContainer{
 	width: 10vw;
-	right: 57.5vw;
+	left: .5vw;
 	height: 100vh;
 	position: absolute;
 }
@@ -167,23 +217,33 @@ body{
 	width: inherit;
 	margin: 0;
 	margin-bottom: 20px;
+	text-align: left;
+	position: absolute;
+	transition: top .5s ease-out;
 }
 
 .monthContent{
-	width: inherit;
-	height: inherit;
+	width: 67.5vw;
+	height: 100vh;
 	position: absolute;
+	transition: opacity 1.5s;
+	opacity: 0;
+	top: 0;
 }
 
 .descriptionBox{
 	width: 200px; /*auto width 200px unless specified*/
 	position: absolute;
-	right: 22%; /*auto on the right side unless specified*/
-	transform: translate(0%, 120%);
+	right: 120px; /*auto on the right side unless specified*/
+	top: 250px;
 }
 
 #bioContainer{
 	left: 0;
 	height: 100vh;
 	width: 30vw;
+	position: fixed;
+}
+
+#optionsContainer{
 }
